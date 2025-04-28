@@ -1,9 +1,21 @@
-import React from 'react';
-import { Users, Award, Globe, Shield, MessageCircle, Mail } from 'lucide-react';
+import React, { useState } from 'react';
+import { Users, Award, Globe, Shield, MessageCircle, Mail, Check, AlertCircle, Loader } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import axios from 'axios';
 
 const AboutPage = ({ darkMode = false }) => {
   const { t } = useTranslation();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [formStatus, setFormStatus] = useState({
+    isSubmitting: false,
+    isSubmitted: false,
+    isError: false,
+    message: ''
+  });
   
   const teamMembers = [
     {
@@ -31,6 +43,66 @@ const AboutPage = ({ darkMode = false }) => {
       image: "/photos/400/ER.png"
     }
   ];
+
+  // Handle input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    // Set form to submitting state
+    setFormStatus({
+      isSubmitting: true,
+      isSubmitted: false,
+      isError: false,
+      message: ''
+    });
+    
+    try {
+      // Send the form data to our API endpoint
+      const response = await axios.post('/api/contact', formData);
+      
+      // Handle successful submission
+      setFormStatus({
+        isSubmitting: false,
+        isSubmitted: true,
+        isError: false,
+        message: response.data.message || 'Your message has been sent successfully!'
+      });
+      
+      // Reset form after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setFormStatus(prev => ({
+          ...prev,
+          isSubmitted: false,
+          message: ''
+        }));
+      }, 5000);
+      
+    } catch (error) {
+      // Handle error
+      setFormStatus({
+        isSubmitting: false,
+        isSubmitted: false,
+        isError: true,
+        message: error.response?.data?.message || 'Failed to send message. Please try again later.'
+      });
+    }
+  };
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -198,7 +270,7 @@ const AboutPage = ({ darkMode = false }) => {
         </div>
       </div>
 
-      {/* Contact Section */}
+      {/* Contact Section - Updated with functional form */}
       <div id="contact-section" className="bg-white rounded-xl shadow-lg p-8 mb-12 scroll-mt-20">
         <h2 className="text-2xl font-bold text-slate-800 mb-6">{t('aboutPage.contact.title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -209,7 +281,7 @@ const AboutPage = ({ darkMode = false }) => {
                 <Mail className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={20} />
                 <div>
                   <p className="font-medium text-slate-800">{t('aboutPage.contact.info.email.title')}</p>
-                  <a href="mailto:support@aegisforge.com" className="text-blue-600 hover:underline">
+                  <a href="mailto:contact@aegisforge.com" className="text-blue-600 hover:underline">
                     {t('aboutPage.contact.info.email.address')}
                   </a>
                 </div>
@@ -225,7 +297,24 @@ const AboutPage = ({ darkMode = false }) => {
           </div>
           <div>
             <h3 className="font-semibold text-slate-800 mb-4">{t('aboutPage.contact.form.title')}</h3>
-            <form className="space-y-4">
+            
+            {/* Form status messages */}
+            {formStatus.isSubmitted && (
+              <div className="mb-4 p-3 bg-green-50 border border-green-100 rounded-lg flex items-center text-green-700">
+                <Check className="h-5 w-5 mr-2 flex-shrink-0" />
+                <span>{formStatus.message}</span>
+              </div>
+            )}
+            
+            {formStatus.isError && (
+              <div className="mb-4 p-3 bg-red-50 border border-red-100 rounded-lg flex items-center text-red-700">
+                <AlertCircle className="h-5 w-5 mr-2 flex-shrink-0" />
+                <span>{formStatus.message}</span>
+              </div>
+            )}
+            
+            {/* Contact form */}
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
                   {t('aboutPage.contact.form.name')}
@@ -233,8 +322,12 @@ const AboutPage = ({ darkMode = false }) => {
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                   required
+                  disabled={formStatus.isSubmitting}
                 />
               </div>
               <div>
@@ -244,8 +337,12 @@ const AboutPage = ({ darkMode = false }) => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                   required
+                  disabled={formStatus.isSubmitting}
                 />
               </div>
               <div>
@@ -254,16 +351,28 @@ const AboutPage = ({ darkMode = false }) => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   rows={4}
                   className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                   required
+                  disabled={formStatus.isSubmitting}
                 ></textarea>
               </div>
               <button 
                 type="submit" 
-                className="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-sm hover:bg-blue-700 transition-colors"
+                className="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-sm hover:bg-blue-700 transition-colors flex items-center justify-center"
+                disabled={formStatus.isSubmitting}
               >
-                {t('aboutPage.contact.form.submit')}
+                {formStatus.isSubmitting ? (
+                  <>
+                    <Loader className="animate-spin mr-2 h-4 w-4" />
+                    {t('common.loading')}
+                  </>
+                ) : (
+                  t('aboutPage.contact.form.submit')
+                )}
               </button>
             </form>
           </div>

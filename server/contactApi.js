@@ -4,10 +4,11 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
-// Create a transporter using your email service credentials
-// This example uses Gmail, but you can use any other service like SendGrid, Mailgun, etc.
+// Create a transporter using Infomaniak SMTP settings
 const transporter = nodemailer.createTransport({
-  service: 'gmail',  // You can use other services like SendGrid, Mailgun, etc.
+  host: 'mail.infomaniak.com',
+  port: 587,
+  secure: false, // Use TLS
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
@@ -29,7 +30,7 @@ router.post('/contact', async (req, res) => {
   try {
     // Email content
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: process.env.EMAIL_USER, 
       to: process.env.CONTACT_RECIPIENT || process.env.EMAIL_USER, // Where to send contact form submissions
       subject: `AegisForge Contact: Message from ${name}`,
       text: `
