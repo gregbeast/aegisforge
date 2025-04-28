@@ -1,0 +1,165 @@
+{
+  "app": {
+    "title": "SecureMe",
+    "subtitle": "Controllo di sicurezza per la tua identità digitale"
+  },
+  "navigation": {
+    "scanner": "Scanner",
+    "concept": "Concetto",
+    "privacyTips": "Consigli sulla privacy",
+    "about": "Informazioni",
+    "closeMenu": "Chiudi menu"
+  },
+  "landing": {
+    "headline": "Il tuo indirizzo email è stato compromesso?",
+    "subheadline": "Scoprilo con un clic. È gratuito.",
+    "emailPlaceholder": "tuo@email.com",
+    "verifyButton": "Verifica la tua email",
+    "ctaButton": "Controlla ora la tua email",
+    "checking": "Verifica in corso...",
+    "error": "Non siamo riusciti a elaborare la tua richiesta. Riprova.",
+    "description": "SecureMe scansiona il web e i database compromessi per rilevare se i tuoi dati sono stati esposti. Ricevi avvisi. Agisci.",
+    "free": "È completamente gratuito",
+    "benefits": {
+      "instant": "Analisi immediata del tuo indirizzo email",
+      "alerts": "Avvisi immediati in caso di violazione",
+      "recommendations": "Raccomandazioni personalizzate (cambio password, attivazione 2FA, ecc.)",
+      "interface": "Interfaccia chiara e rassicurante, anche per utenti non tecnici"
+    },
+    "testimonials": {
+      "first": {
+        "text": "Ho scoperto che la mia password principale era stata esposta da 3 anni. Grazie SecureMe!",
+        "author": "Laura, Ginevra"
+      },
+      "second": {
+        "text": "Semplice, veloce, efficace. L’ho consigliato a tutta la mia famiglia.",
+        "author": "Kevin, Parigi"
+      }
+    }
+  },
+  "scanPage": {
+    "title": "Verifica la tua sicurezza digitale",
+    "description": "Scansiona la tua email per scoprire eventuali violazioni dei dati, valutare la sicurezza delle tue password e ricevere consigli personalizzati.",
+    "emailLabel": "Indirizzo email",
+    "emailPlaceholder": "tuo@email.com",
+    "emailHint": "Controlliamo se la tua email è stata coinvolta in violazioni di dati",
+    "scanButton": "Scansiona ora",
+    "scanning": "Scansione in corso...",
+    "scanError": "Non è stato possibile completare la scansione. Riprova più tardi.",
+    "loadingTitle": "Scansione del tuo profilo di sicurezza",
+    "loadingDescription": "Questo potrebbe richiedere alcuni secondi...",
+    "resultsTitle": "I tuoi risultati di sicurezza",
+    "newScanButton": "Avvia una nuova scansione",
+    "tabs": {
+      "overview": "Panoramica",
+      "breaches": "Violazioni",
+      "details": "Dettagli"
+    }
+  },
+  "scan": {
+    "title": "Scansione di sicurezza",
+    "emailLabel": "Indirizzo email",
+    "emailPlaceholder": "Inserisci la tua email",
+    "scanButton": "Scansiona ora",
+    "scanningMessage": "Analisi della tua impronta digitale in corso...",
+    "resultsTitle": "Il tuo punteggio di sicurezza",
+    "noBreaches": "Nessuna violazione trovata!",
+    "breachesFound": "Trovata {{count}} violazione",
+    "breachesFound_plural": "Trovate {{count}} violazioni"
+  },
+  "results": {
+    "score": "Il tuo punteggio",
+    "recommendations": "Raccomandazioni",
+    "breaches": "Violazioni",
+    "devices": "Dispositivi",
+    "passwords": "Password",
+    "wifi": "WiFi"
+  },
+  "breaches": {
+    "title": "Dettagli violazione",
+    "domain": "Dominio",
+    "breachDate": "Data violazione",
+    "dataClasses": "Dati esposti",
+    "description": "Descrizione"
+  },
+  "recommendations": {
+    "title": "Raccomandazioni di sicurezza",
+    "implement": "Implementa"
+  },
+  "cards": {
+    "password": {
+      "title": "Sicurezza della password",
+      "strong": "Forte",
+      "medium": "Media",
+      "weak": "Debole",
+      "strengthLabel": "Forza",
+      "lastChangedLabel": "Ultima modifica",
+      "reusedLabel": "Riutilizzata",
+      "yes": "Sì",
+      "no": "No",
+      "exposedLabel": "Esposta",
+      "tips": "Consigli per le password"
+    },
+    "wifi": {
+      "title": "Sicurezza WiFi",
+      "secure": "Sicuro",
+      "vulnerable": "Vulnerabile",
+      "encryptionLabel": "Crittografia",
+      "visibilityLabel": "Visibilità",
+      "public": "Pubblico",
+      "hidden": "Nascosto",
+      "lastChangedLabel": "Ultimo cambio password",
+      "tips": "Consigli WiFi"
+    },
+    "device": {
+      "title": "Sicurezza del dispositivo",
+      "osLabel": "Sistema operativo",
+      "updatedLabel": "Ultimo aggiornamento",
+      "encryptionLabel": "Crittografia",
+      "enabled": "Abilitato",
+      "disabled": "Disabilitato",
+      "antivirusLabel": "Antivirus",
+      "firewallLabel": "Firewall",
+      "active": "Attivo",
+      "inactive": "Inattivo",
+      "tips": "Consigli per il dispositivo"
+    },
+    "recommendations": {
+      "high": "Alta priorità",
+      "medium": "Priorità media",
+      "low": "Bassa priorità",
+      "fixed": "Risolto",
+      "implement": "Implementa",
+      "implemented": "Implementato"
+    }
+  },
+  "footer": {
+    "description": "Scansione di sicurezza completa per proteggere la tua vita digitale. Rispettiamo la tua privacy e tutte le scansioni sono eseguite localmente.",
+    "features": "Funzionalità",
+    "emailScan": "Scansione email",
+    "passwordCheck": "Controllo password",
+    "deviceSecurity": "Sicurezza del dispositivo",
+    "resources": "Risorse",
+    "securityGuide": "Guida alla sicurezza",
+    "privacyTips": "Consigli privacy",
+    "faq": "FAQ",
+    "legal": "Legale",
+    "privacyPolicy": "Informativa sulla privacy",
+    "termsOfService": "Termini di servizio",
+    "contact": "Contatto",
+    "copyright": "© 2025 SecureMe è un marchio di DigitalForge. Tutti i diritti riservati."
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "retry": "Riprova"
+  },
+  "languages": {
+    "en": "Inglese",
+    "es": "Spagnolo",
+    "fr": "Francese",
+    "de": "Tedesco",
+    "ja": "Giapponese",
+    "it": "Italiano"
+  }
+}

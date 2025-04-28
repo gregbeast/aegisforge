@@ -1,0 +1,437 @@
+{
+  "app": {
+    "title": "Aegis Forge",
+    "subtitle": "Vérification de sécurité pour votre identité numérique"
+  },
+  "navigation": {
+    "scanner": "Scanner",
+    "concept": "Concept",
+    "privacyTips": "Conseils de confidentialité",
+    "security-tools": "Outils de sécurité",
+    "pricing": "Nos offres",
+    "about": "À propos",
+    "closeMenu": "Fermer le menu"
+  },
+  "landing": {
+    "headline": "Votre adresse e-mail a-t-elle été compromise ?",
+    "subheadline": "Découvrez-le en un clic. C'est gratuit.",
+    "emailPlaceholder": "votre@email.com",
+    "verifyButton": "Vérifier votre e-mail",
+    "ctaButton": "Vérifiez votre e-mail maintenant",
+    "checking": "Vérification en cours...",
+    "error": "Nous n'avons pas pu traiter votre demande. Veuillez réessayer.",
+    "description": "AegisForge analyse le web et les bases de données compromises pour détecter si vos données ont été exposées. Soyez alerté. Agissez.",
+    "free": "C'est 100% gratuit",
+    "benefits": {
+      "instant": "Analyse instantanée de votre adresse e-mail",
+      "alerts": "Alertes immédiates en cas de détection d'une fuite",
+      "recommendations": "Recommandations personnalisées (changements de mot de passe, configuration de 2FA, etc.)",
+      "interface": "Interface claire et rassurante, même pour les utilisateurs non techniques"
+    },
+    "testimonials": {
+      "first": {
+        "text": "J'ai découvert que mon mot de passe principal était exposé depuis 3 ans. Merci AegisForge !",
+        "author": "Laura, Genève"
+      },
+      "second": {
+        "text": "Simple, rapide, efficace. Je l'ai recommandé à toute ma famille.",
+        "author": "Kevin, Paris"
+      }
+    }
+  },
+  "conceptPage": {
+    "title": "Le Concept AegisForge",
+    "subtitle": "Sécurité numérique complète accessible à tous, alimentée par une intelligence avancée des menaces.",
+    "mission": {
+      "title": "Notre Mission",
+      "paragraph1": "Dans le monde interconnecté d'aujourd'hui, <bold>la sécurité numérique n'est plus une option — c'est essentiel</bold>. Pourtant, la plupart des outils de sécurité restent complexes, intimidants et inaccessibles à l'utilisateur moyen. AegisForge a été construit sur un principe simple : tout le monde mérite une protection numérique robuste, quel que soit son niveau d'expertise technique.",
+      "paragraph2": "Notre plateforme surveille en permanence le paysage numérique pour détecter les menaces pesant sur votre identité, vos comptes et vos appareils. Nous traduisons des concepts de sécurité complexes en recommandations claires et exploitables, vous permettant de protéger votre vie numérique sans avoir besoin d'un diplôme en cybersécurité."
+    },
+    "features": {
+      "breachDetection": {
+        "title": "Détection de Fuites",
+        "description": "<bold>Notre système</bold> surveille des centaines de sources de fuites de données et <bold>vous alerte instantanément si vos informations sont exposées</bold>. Nous vérifions les adresses e-mail, les noms d'utilisateur et d'autres identifiants par rapport à une base de données complète des fuites connues."
+      },
+      "passwordSecurity": {
+        "title": "Sécurité des Mots de Passe",
+        "description": "Nous évaluons la force des mots de passe et vérifions les identifiants compromis sur plusieurs services. Nos recommandations vous aident à mettre en œuvre une bonne hygiène de mot de passe sans frustration."
+      },
+      "deviceSecurity": {
+        "title": "Sécurité des Appareils",
+        "description": "Nous analysons la configuration de votre appareil pour détecter les vulnérabilités de sécurité, les logiciels obsolètes et les paramètres potentiellement risqués. Obtenez des conseils personnalisés pour renforcer la posture de sécurité de votre appareil."
+      },
+      "networkProtection": {
+        "title": "Protection du Réseau",
+        "description": "Nous évaluons la sécurité de votre réseau, y compris les normes de chiffrement WiFi et les vulnérabilités potentielles. Notre système fournit des conseils pour sécuriser vos connexions contre les vecteurs d'attaque courants."
+      }
+    },
+    "methodology": {
+      "title": "Notre Méthodologie de Sécurité",
+      "step1": {
+        "title": "Analyse Complète",
+        "description": "Notre technologie d'analyse multicouche examine votre empreinte numérique à travers diverses sources de données, identifiant les problèmes de sécurité potentiels avant qu'ils ne puissent être exploités."
+      },
+      "step2": {
+        "title": "Évaluation des Risques",
+        "description": "Nous calculons un score de sécurité basé sur plusieurs facteurs, vous donnant une image claire de votre posture de sécurité globale et mettant en évidence les domaines qui nécessitent de l'attention."
+      },
+      "step3": {
+        "title": "Recommandations Exploitables",
+        "description": "Au lieu de vous submerger de jargon technique, nous fournissons des étapes claires et priorisées pour remédier aux vulnérabilités et renforcer votre sécurité."
+      },
+      "step4": {
+        "title": "Surveillance Continue",
+        "description": "Les menaces numériques évoluent constamment. Notre service surveille en permanence votre état de sécurité, vous alertant de nouvelles vulnérabilités à mesure qu'elles apparaissent."
+      }
+    },
+    "privacy": {
+      "title": "Notre Engagement en matière de Confidentialité",
+      "intro": "Chez AegisForge, nous croyons que la sécurité et la confidentialité vont de pair. C'est pourquoi nous avons conçu notre plateforme avec la confidentialité au cœur :",
+      "points": {
+        "local": "Toutes les analyses de sécurité sont effectuées localement sur votre appareil dans la mesure du possible",
+        "noSelling": "Nous minimisons la collecte de données et ne vendons jamais vos informations à des tiers",
+        "encryption": "Nos systèmes utilisent le chiffrement et des protocoles sécurisés pour protéger toutes les données en transit",
+        "control": "Vous gardez le contrôle sur ce qui est analysé et quand"
+      },
+      "conclusion": "Nous nous engageons à la transparence dans nos opérations et à toujours être francs sur la façon dont nous traitons vos données. Votre confiance est notre atout le plus précieux."
+    },
+    "cta": {
+      "title": "Prêt à sécuriser votre vie numérique ?",
+      "description": "Commencez par une analyse de sécurité gratuite et découvrez comment AegisForge peut vous aider à protéger votre présence numérique.",
+      "button": "Commencer Votre Analyse de Sécurité"
+    }
+  },
+  "scanPage": {
+    "title": "Vérifiez votre sécurité numérique",
+    "description": "Analysez votre e-mail pour découvrir les fuites de données, évaluer la sécurité de vos mots de passe et obtenir des recommandations personnalisées.",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "votre@email.com",
+    "emailHint": "Nous vérifierons si votre e-mail a été impliqué dans des fuites de données",
+    "scanButton": "Analyser maintenant",
+    "scanning": "Analyse en cours...",
+    "scanError": "Nous n'avons pas pu terminer l'analyse. Veuillez réessayer plus tard.",
+    "loadingTitle": "Analyse de votre profil de sécurité",
+    "loadingDescription": "Cela peut prendre quelques secondes...",
+    "resultsTitle": "Vos résultats de sécurité", 
+    "newScanButton": "Commencer une nouvelle analyse",
+    "tabs": {
+      "overview": "Vue d'ensemble",
+      "breaches": "Fuites",
+      "details": "Détails"
+    }
+  },
+  "scan": {
+    "title": "Analyse de sécurité",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "Entrez votre e-mail",
+    "scanButton": "Analyser maintenant",
+    "scanningMessage": "Analyse de votre empreinte numérique...",
+    "resultsTitle": "Votre score de sécurité",
+    "noBreaches": "Aucune fuite trouvée !",
+    "breachesFound": "{{count}} fuite trouvée",
+    "breachesFound_plural": "{{count}} fuites trouvées"
+  },
+  "deviceCard": {
+    "title": "Sécurité de l'appareil",
+    "unknownOs": "Inconnu",
+    "operatingSystem": "Système d'exploitation",
+    "rootStatus": "Statut root",
+    "rootedJailbroken": "Rooté/Jailbreaké",
+    "secure": "Sécurisé",
+    "securityPatches": "Correctifs de sécurité",
+    "upToDate": "À jour",
+    "updatesNeeded": "Mises à jour nécessaires",
+    "latestPatches": "Derniers correctifs",
+    "appPermissions": "Permissions des applications",
+    "highNumberOfPermissions": "Nombre élevé de permissions",
+    "securityWarning": "Avertissement de sécurité",
+    "rootWarningMessage": "Les appareils rootés/jailbreakés ont des protections de sécurité réduites. Cela peut exposer votre appareil à des risques de sécurité supplémentaires.",
+    "permissions": {
+      "Camera": "Caméra",
+      "Microphone": "Microphone",
+      "Location": "Localisation",
+      "Contacts": "Contacts",
+      "Calendar": "Calendrier",
+      "Photos": "Photos",
+      "Storage": "Stockage",
+      "Bluetooth": "Bluetooth",
+      "Notifications": "Notifications",
+      "Background App Refresh": "Actualisation en arrière-plan"
+    }
+  },
+  "breachList": {
+    "unknown": "Inconnu",
+    "unknownDate": "Date inconnue",
+    "breachAriaLabel": "Fuite chez {{name}} le {{date}}",
+    "recordsCount": "{{count}} enregistrements",
+    "noBreachesFound": "🎉 Aucune fuite trouvée — votre e-mail est en sécurité sur les listes de fuites publiques !",
+    "emailFoundIn": "Votre e-mail trouvé dans :",
+    "dataTypes": {
+      "Email addresses": "Adresses e-mail",
+      "Usernames": "Noms d'utilisateur",
+      "Passwords": "Mots de passe",
+      "Dates of birth": "Dates de naissance",
+      "IP addresses": "Adresses IP",
+      "Phone numbers": "Numéros de téléphone",
+      "Physical addresses": "Adresses physiques",
+      "Credit card data": "Données de carte de crédit",
+      "Social media profiles": "Profils de réseaux sociaux"
+    }
+  },
+  "passwordCard": {
+    "title": "Sécurité des mots de passe",
+    "foundInOneBreachMessage": "Trouvé dans 1 fuite de données connue",
+    "foundInMultipleBreachesMessage": "Trouvé dans {{count}} fuites de données connues",
+    "notFoundMessage": "Non trouvé dans des fuites de données connues",
+    "recommendedActionsTitle": "Actions recommandées",
+    "keepUpGoodWorkTitle": "Continuez le bon travail",
+    "actions": {
+      "changePassword": "Changez votre mot de passe immédiatement",
+      "useUniquePassword": "Utilisez un mot de passe unique pour chaque compte",
+      "enable2FA": "Activez l'authentification à deux facteurs lorsque disponible",
+      "usePasswordManager": "Envisagez d'utiliser un gestionnaire de mots de passe"
+    },
+    "goodPractices": {
+      "continueUniquePasswords": "Continuez à utiliser des mots de passe uniques pour chaque compte",
+      "regularlyUpdate": "Mettez régulièrement à jour vos mots de passe tous les 3 à 6 mois",
+      "usePasswordManager": "Utilisez un gestionnaire de mots de passe pour plus de sécurité"
+    }
+  },
+  "wifiCard": {
+    "title": "Sécurité WiFi",
+    "encryption": "chiffrement",
+    "publicNetwork": " (Réseau public)",
+    "privateNetwork": " (Réseau privé)",
+    "securityConcerns": "Problèmes de sécurité",
+    "recommendations": {
+      "title": "Recommandations",
+      "upgradeToWpa2": "Passez à WPA2 ou WPA3 si votre routeur le prend en charge",
+      "useStrongPassword": "Utilisez des mots de passe forts et uniques pour votre réseau WiFi"
+    },
+    "concerns": {
+      "publicWifiVulnerable": "Les réseaux WiFi publics sont vulnérables aux écoutes",
+      "unencryptedWifi": "Le WiFi non chiffré n'offre aucune protection",
+      "wepCompromised": "Le chiffrement WEP peut être facilement compromis",
+      "useVpn": "Envisagez d'utiliser un VPN pour plus de sécurité"
+    }
+  },
+  "recommendations": {
+    "title": "Actions recommandées",
+    "items": {
+      "change_your_password_immediately": "Changez votre mot de passe immédiatement",
+      "enable_2fa_on_all_accounts": "Activez l'authentification à deux facteurs sur tous vos comptes",
+      "review_recent_account_activity": "Examinez l'activité récente de votre compte",
+      "use_a_password_manager": "Utilisez un gestionnaire de mots de passe",
+      "check_for_software_updates": "Vérifiez les mises à jour logicielles",
+      "avoid_using_public_wifi": "Évitez d'utiliser le WiFi public",
+      "install_a_security_app": "Installez une application de sécurité",
+      "consider_updating_your_password": "Envisagez de mettre à jour votre mot de passe",
+      "enable_2fa_where_available": "Activez l'authentification à deux facteurs lorsque disponible",
+      "check_privacy_settings_on_your_accounts": "Vérifiez les paramètres de confidentialité de vos comptes",
+      "keep_your_software_updated": "Maintenez vos logiciels à jour",
+      "be_cautious_with_public_wifi": "Soyez prudent avec le WiFi public",
+      "great_job_continue_monitoring_your_accounts": "Excellent travail ! Continuez à surveiller vos comptes",
+      "regularly_check_for_new_security_features": "Vérifiez régulièrement les nouvelles fonctionnalités de sécurité",
+      "consider_a_security_audit_every_few_months": "Envisagez un audit de sécurité tous les quelques mois",
+      "keep_your_current_security_practices": "Maintenez vos pratiques de sécurité actuelles"
+    },
+    "priority": {
+      "high": "Priorité haute",
+      "medium": "Priorité moyenne",
+      "low": "Priorité basse",
+      "fixed": "Corrigé"
+    },
+    "actions": {
+      "implement": "Appliquer",
+      "implemented": "Appliqué"
+    }
+  },
+  "results": {
+    "score": "Votre score",
+    "recommendations": "Recommandations",
+    "breaches": "Fuites",
+    "devices": "Appareils",
+    "passwords": "Mots de passe",
+    "wifi": "WiFi"
+  },
+  "breaches": {
+    "title": "Détails des fuites",
+    "domain": "Domaine",
+    "breachDate": "Date de la fuite",
+    "dataClasses": "Données exposées",
+    "description": "Description"
+  },
+  "cards": {
+    "password": {
+      "title": "Sécurité des mots de passe",
+      "strong": "Fort",
+      "medium": "Moyen",
+      "weak": "Faible",
+      "strengthLabel": "Force",
+      "lastChangedLabel": "Dernière modification",
+      "reusedLabel": "Réutilisé",
+      "yes": "Oui",
+      "no": "Non",
+      "exposedLabel": "Exposé",
+      "tips": "Conseils mot de passe"
+    },
+    "wifi": {
+      "title": "Sécurité WiFi",
+      "secure": "Sécurisé",
+      "vulnerable": "Vulnérable",
+      "encryptionLabel": "Chiffrement",
+      "visibilityLabel": "Visibilité",
+      "public": "Public",
+      "hidden": "Masqué",
+      "lastChangedLabel": "Dernière modification du mot de passe",
+      "tips": "Conseils WiFi"
+    },
+    "device": {
+      "title": "Sécurité de l'appareil",
+      "osLabel": "Système d'exploitation",
+      "updatedLabel": "Dernière mise à jour",
+      "encryptionLabel": "Chiffrement",
+      "enabled": "Activé",
+      "disabled": "Désactivé",
+      "antivirusLabel": "Antivirus",
+      "firewallLabel": "Pare-feu",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "tips": "Conseils appareil"
+    }
+  },
+  "aboutPage": {
+    "title": "À propos de AegisForge",
+    "subtitle": "Notre mission est de donner à chacun les outils et les connaissances nécessaires pour protéger sa vie numérique.",
+    "story": {
+      "title": "Notre Histoire",
+      "paragraph1": "AegisForge a été fondé avec une mission claire : démocratiser la cybersécurité. Nous croyons qu'une protection numérique robuste ne devrait pas être un privilège réservé aux grandes organisations disposant d'équipes de sécurité dédiées — elle devrait être accessible à tous.",
+      "paragraph2": "Aujourd'hui, notre équipe d'experts en sécurité, de développeurs et de spécialistes de l'expérience utilisateur travaillent ensemble pour fournir une solution de sécurité complète qui autonomise plutôt que de submerger. Nous sommes fiers d'avoir aidé des milliers d'utilisateurs à renforcer leur sécurité numérique et à protéger ce qui compte le plus pour eux."
+    },
+    "values": {
+      "protection": {
+        "title": "Protection pour Tous",
+        "description": "Nous croyons qu'une sécurité numérique solide devrait être accessible à tous, indépendamment de l'expertise technique ou des ressources. Nous concevons nos outils pour qu'ils soient puissants mais intuitifs."
+      },
+      "excellence": {
+        "title": "Excellence et Intégrité",
+        "description": "Nous nous imposons les normes les plus élevées dans tout ce que nous faisons. Nous nous engageons à des pratiques éthiques, à la transparence dans nos méthodes et à l'amélioration continue de nos services."
+      },
+      "userCentered": {
+        "title": "Approche Centrée sur l'Utilisateur",
+        "description": "Nous concevons avec nos utilisateurs au centre de tout ce que nous faisons. Nous transformons des concepts de sécurité complexes en conseils clairs et exploitables qui autonomisent plutôt que de submerger."
+      }
+    },
+    "impact": {
+      "title": "Notre Impact",
+      "users": {
+        "count": "50 000+",
+        "label": "Utilisateurs Protégés"
+      },
+      "vulnerabilities": {
+        "count": "1 Million",
+        "label": "Vulnérabilités Identifiées"
+      },
+      "satisfaction": {
+        "count": "98%",
+        "label": "Satisfaction Utilisateur"
+      }
+    },
+    "team": {
+      "title": "Rencontrez Notre Équipe",
+      "members": {
+        "greg": {
+          "name": "Greg Roy",
+          "role": "Fondateur et Architecte",
+          "bio": "Ancien consultant en cybersécurité et développeur full-stack avec plus de 10 ans d'expérience dans la protection des systèmes d'entreprise. Greg a fondé AegisForge pour rendre la sécurité de niveau professionnel accessible à tous."
+        },
+        "marissa": {
+          "name": "Marissa Duret",
+          "role": "Productrice",
+          "bio": "Productrice avec une expertise dans le développement de jeux et les technologies de pointe. Marissa dirige notre équipe d'UX et d'ingénierie et s'assure que notre plateforme maintient les normes les plus élevées."
+        },
+        "marcus": {
+          "name": "Marcus Williams",
+          "role": "Analyste de Renseignement sur les Menaces",
+          "bio": "Ancien officier de renseignement spécialisé dans les menaces numériques. Marcus surveille les menaces de sécurité émergentes et s'assure que nos systèmes de détection restent à jour."
+        },
+        "emma": {
+          "name": "Emma Rodriguez",
+          "role": "Directrice de l'Expérience Utilisateur",
+          "bio": "Spécialiste de l'interaction homme-machine avec une formation en psychologie cognitive. Emma s'assure que nos outils de sécurité sont accessibles et intuitifs pour les utilisateurs de tous niveaux techniques."
+        }
+      }
+    },
+    "global": {
+      "title": "Notre Présence Mondiale",
+      "description": "AegisForge sert des utilisateurs dans plus de 15 pays, avec des membres de l'équipe répartis dans le monde entier. Nos perspectives diverses nous permettent d'aborder les défis de sécurité sous plusieurs angles et de fournir des solutions culturellement pertinentes.",
+      "mapAlt": "Carte du monde montrant la présence de AegisForge"
+    },
+    "testimonials": {
+      "title": "Ce que les Utilisateurs Disent de Nous",
+      "first": {
+        "text": "\"AegisForge a complètement changé ma façon de penser à ma sécurité en ligne. Le tableau de bord est intuitif, et les recommandations sont claires et exploitables. Je me sens beaucoup plus confiant maintenant.\"",
+        "author": "— Michael T., Propriétaire de Petite Entreprise"
+      },
+      "second": {
+        "text": "\"En tant que personne peu versée dans la technologie, je me suis toujours sentie intimidée par la cybersécurité. AegisForge explique tout clairement et me guide à travers chaque étape. Je l'ai recommandé à tous mes amis et ma famille.\"",
+        "author": "— Jennifer L., Éducatrice"
+      }
+    },
+    "contact": {
+      "title": "Contactez-Nous",
+      "info": {
+        "title": "Informations de Contact",
+        "email": {
+          "title": "Envoyez-nous un E-mail",
+          "address": "support@aegisforge.com"
+        },
+        "chat": {
+          "title": "Chat en Direct",
+          "availability": "Disponible 24/7 via notre application"
+        }
+      },
+      "form": {
+        "title": "Envoyez-Nous un Message",
+        "name": "Votre Nom",
+        "email": "Adresse E-mail",
+        "message": "Message",
+        "submit": "Envoyer le Message"
+      }
+    },
+    "careers": {
+      "title": "Rejoignez Notre Équipe",
+      "description": "Nous sommes toujours à la recherche de personnes talentueuses qui sont passionnées par la cybersécurité et qui souhaitent rendre le monde numérique plus sûr pour tous.",
+      "button": "Voir les Postes Ouverts"
+    }
+  },
+  "footer": {
+    "description": "Analyse de sécurité complète pour protéger votre vie numérique. Nous valorisons votre confidentialité et toutes les analyses sont effectuées localement.",
+    "features": "Fonctionnalités",
+    "emailScan": "Analyse d'e-mail",
+    "passwordCheck": "Vérification de mot de passe",
+    "deviceSecurity": "Sécurité de l'appareil",
+    "resources": "Ressources",
+    "securityGuide": "Guide de sécurité",
+    "privacyTips": "Conseils de confidentialité",
+    "faq": "FAQ",
+    "legal": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "contact": "Contact",
+    "copyright": "© 2025 AegisForge est une marque déposée de DigitalForge. Tous droits réservés."
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "retry": "Réessayer"
+  },
+  "languages": {
+    "en": "Anglais",
+    "es": "Espagnol",
+    "fr": "Français",
+    "de": "Allemand",
+    "ja": "Japonais",
+    "it": "Italien"
+  }
+}

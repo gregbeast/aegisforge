@@ -1,0 +1,165 @@
+{
+  "app": {
+    "title": "SecureMe",
+    "subtitle": "Sicherheitsüberprüfung für Ihre digitale Identität"
+  },
+  "navigation": {
+    "scanner": "Scanner",
+    "concept": "Konzept",
+    "privacyTips": "Datenschutz-Tipps",
+    "about": "Über uns",
+    "closeMenu": "Menü schließen"
+  },
+  "landing": {
+    "headline": "Wurde Ihre E-Mail-Adresse kompromittiert?",
+    "subheadline": "Finden Sie es mit einem Klick heraus. Es ist kostenlos.",
+    "emailPlaceholder": "ihre@email.com",
+    "verifyButton": "Überprüfen Sie Ihre E-Mail",
+    "ctaButton": "Jetzt Ihre E-Mail prüfen",
+    "checking": "Überprüfung läuft...",
+    "error": "Wir konnten Ihre Anfrage nicht verarbeiten. Bitte versuchen Sie es erneut.",
+    "description": "SecureMe durchsucht das Web und kompromittierte Datenbanken, um festzustellen, ob Ihre Daten offengelegt wurden. Werden Sie benachrichtigt. Ergreifen Sie Maßnahmen.",
+    "free": "Es ist 100% kostenlos",
+    "benefits": {
+      "instant": "Sofortige Analyse Ihrer E-Mail-Adresse",
+      "alerts": "Sofortige Benachrichtigungen, wenn ein Datenleck erkannt wird",
+      "recommendations": "Personalisierte Empfehlungen (Passwortänderungen, 2FA-Einrichtung usw.)",
+      "interface": "Klare und beruhigende Benutzeroberfläche, auch für nicht-technische Benutzer"
+    },
+    "testimonials": {
+      "first": {
+        "text": "Ich habe entdeckt, dass mein Hauptpasswort 3 Jahre lang offengelegt war. Danke SecureMe!",
+        "author": "Laura, Genf"
+      },
+      "second": {
+        "text": "Einfach, schnell, effektiv. Ich habe es meiner ganzen Familie empfohlen.",
+        "author": "Kevin, Paris"
+      }
+    }
+  },
+  "scanPage": {
+    "title": "Überprüfen Sie Ihre digitale Sicherheit",
+    "description": "Scannen Sie Ihre E-Mail, um Datenlecks zu entdecken, die Sicherheit Ihrer Passwörter zu bewerten und personalisierte Empfehlungen zu erhalten.",
+    "emailLabel": "E-Mail-Adresse",
+    "emailPlaceholder": "ihre@email.com",
+    "emailHint": "Wir überprüfen, ob Ihre E-Mail von Datenlecks betroffen ist",
+    "scanButton": "Jetzt scannen",
+    "scanning": "Scanning läuft...",
+    "scanError": "Wir konnten den Scan nicht abschließen. Bitte versuchen Sie es später erneut.",
+    "loadingTitle": "Scannen Ihres Sicherheitsprofils",
+    "loadingDescription": "Dies kann einige Sekunden dauern...",
+    "resultsTitle": "Ihre Sicherheitsergebnisse", 
+    "newScanButton": "Neuen Scan starten",
+    "tabs": {
+      "overview": "Übersicht",
+      "breaches": "Datenlecks",
+      "details": "Details"
+    }
+  },
+  "scan": {
+    "title": "Sicherheitsanalyse",
+    "emailLabel": "E-Mail-Adresse",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+    "scanButton": "Jetzt scannen",
+    "scanningMessage": "Ihr digitaler Fußabdruck wird gescannt...",
+    "resultsTitle": "Ihr Sicherheitswert",
+    "noBreaches": "Keine Datenlecks gefunden!",
+    "breachesFound": "{{count}} Datenleck gefunden",
+    "breachesFound_plural": "{{count}} Datenlecks gefunden"
+  },
+  "results": {
+    "score": "Ihr Wert",
+    "recommendations": "Empfehlungen",
+    "breaches": "Datenlecks",
+    "devices": "Geräte",
+    "passwords": "Passwörter",
+    "wifi": "WLAN"
+  },
+  "breaches": {
+    "title": "Details zu Datenlecks",
+    "domain": "Domain",
+    "breachDate": "Datum des Lecks",
+    "dataClasses": "Exponierte Daten",
+    "description": "Beschreibung"
+  },
+  "recommendations": {
+    "title": "Sicherheitsempfehlungen",
+    "implement": "Umsetzen"
+  },
+  "cards": {
+    "password": {
+      "title": "Passwort-Sicherheit",
+      "strong": "Stark",
+      "medium": "Mittel",
+      "weak": "Schwach",
+      "strengthLabel": "Stärke",
+      "lastChangedLabel": "Zuletzt geändert",
+      "reusedLabel": "Wiederverwendet",
+      "yes": "Ja",
+      "no": "Nein",
+      "exposedLabel": "Exponiert",
+      "tips": "Passwort-Tipps"
+    },
+    "wifi": {
+      "title": "WLAN-Sicherheit",
+      "secure": "Sicher",
+      "vulnerable": "Anfällig",
+      "encryptionLabel": "Verschlüsselung",
+      "visibilityLabel": "Sichtbarkeit",
+      "public": "Öffentlich",
+      "hidden": "Versteckt",
+      "lastChangedLabel": "Passwort zuletzt geändert",
+      "tips": "WLAN-Tipps"
+    },
+    "device": {
+      "title": "Geräte-Sicherheit",
+      "osLabel": "Betriebssystem",
+      "updatedLabel": "Zuletzt aktualisiert",
+      "encryptionLabel": "Verschlüsselung",
+      "enabled": "Aktiviert",
+      "disabled": "Deaktiviert",
+      "antivirusLabel": "Antivirus",
+      "firewallLabel": "Firewall",
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "tips": "Geräte-Tipps"
+    },
+    "recommendations": {
+      "high": "Hohe Priorität",
+      "medium": "Mittlere Priorität",
+      "low": "Niedrige Priorität",
+      "fixed": "Behoben",
+      "implement": "Umsetzen",
+      "implemented": "Umgesetzt"
+    }
+  },
+  "footer": {
+    "description": "Umfassende Sicherheitsanalyse zum Schutz Ihres digitalen Lebens. Wir schätzen Ihre Privatsphäre und alle Scans werden lokal durchgeführt.",
+    "features": "Funktionen",
+    "emailScan": "E-Mail-Scan",
+    "passwordCheck": "Passwortprüfung",
+    "deviceSecurity": "Gerätesicherheit",
+    "resources": "Ressourcen",
+    "securityGuide": "Sicherheitsleitfaden",
+    "privacyTips": "Datenschutz-Tipps",
+    "faq": "Häufige Fragen",
+    "legal": "Rechtliches",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "contact": "Kontakt",
+    "copyright": "© 2025 SecureMe ist eine Marke von DigitalForge. Alle Rechte vorbehalten."
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Erneut versuchen"
+  },
+  "languages": {
+    "en": "Englisch",
+    "es": "Spanisch",
+    "fr": "Französisch",
+    "de": "Deutsch",
+    "ja": "Japanisch",
+    "it": "Italienisch"
+  }
+}

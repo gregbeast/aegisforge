@@ -1,0 +1,165 @@
+{
+  "app": {
+    "title": "SecureMe",
+    "subtitle": "Verificación de Seguridad para tu Identidad Digital"
+  },
+  "navigation": {
+    "scanner": "Escáner",
+    "concept": "Concepto",
+    "privacyTips": "Consejos de Privacidad",
+    "about": "Acerca de",
+    "closeMenu": "Cerrar Menú"
+  },
+  "landing": {
+    "headline": "¿Ha sido comprometido tu correo electrónico?",
+    "subheadline": "Descúbrelo con un clic. Es gratis.",
+    "emailPlaceholder": "tu@email.com",
+    "verifyButton": "Verificar tu email",
+    "ctaButton": "Verifica tu email ahora",
+    "checking": "Verificando...",
+    "error": "No pudimos procesar tu solicitud. Por favor, inténtalo de nuevo.",
+    "description": "SecureMe analiza la web y bases de datos comprometidas para detectar si tus datos han sido expuestos. Recibe alertas. Toma medidas.",
+    "free": "Es 100% gratuito",
+    "benefits": {
+      "instant": "Análisis instantáneo de tu dirección de correo electrónico",
+      "alerts": "Alertas inmediatas cuando se detecta una filtración",
+      "recommendations": "Recomendaciones personalizadas (cambios de contraseña, configuración de 2FA, etc.)",
+      "interface": "Interfaz clara y tranquilizadora, incluso para usuarios no técnicos"
+    },
+    "testimonials": {
+      "first": {
+        "text": "Descubrí que mi contraseña principal había estado expuesta durante 3 años. ¡Gracias SecureMe!",
+        "author": "Laura, Ginebra"
+      },
+      "second": {
+        "text": "Simple, rápido, efectivo. Se lo he recomendado a toda mi familia.",
+        "author": "Kevin, París"
+      }
+    }
+  },
+  "scanPage": {
+    "title": "Verifica tu Seguridad Digital",
+    "description": "Escanea tu correo electrónico para descubrir filtraciones de datos, evaluar la seguridad de tu contraseña y obtener recomendaciones personalizadas.",
+    "emailLabel": "Dirección de Correo Electrónico",
+    "emailPlaceholder": "tu@email.com",
+    "emailHint": "Comprobaremos si tu correo ha estado involucrado en alguna filtración de datos",
+    "scanButton": "Escanear Ahora",
+    "scanning": "Escaneando...",
+    "scanError": "No pudimos completar el escaneo. Por favor, inténtalo más tarde.",
+    "loadingTitle": "Escaneando tu Perfil de Seguridad",
+    "loadingDescription": "Esto puede tardar unos segundos...",
+    "resultsTitle": "Tus Resultados de Seguridad", 
+    "newScanButton": "Iniciar un Nuevo Escaneo",
+    "tabs": {
+      "overview": "Resumen",
+      "breaches": "Filtraciones",
+      "details": "Detalles"
+    }
+  },
+  "scan": {
+    "title": "Análisis de Seguridad",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "Ingresa tu correo electrónico",
+    "scanButton": "Analizar Ahora",
+    "scanningMessage": "Analizando tu huella digital...",
+    "resultsTitle": "Tu Puntuación de Seguridad",
+    "noBreaches": "¡No se encontraron filtraciones!",
+    "breachesFound": "Se encontró {{count}} filtración",
+    "breachesFound_plural": "Se encontraron {{count}} filtraciones"
+  },
+  "results": {
+    "score": "Tu Puntuación",
+    "recommendations": "Recomendaciones",
+    "breaches": "Filtraciones",
+    "devices": "Dispositivos",
+    "passwords": "Contraseñas",
+    "wifi": "WiFi"
+  },
+  "breaches": {
+    "title": "Detalles de las Filtraciones",
+    "domain": "Dominio",
+    "breachDate": "Fecha de Filtración",
+    "dataClasses": "Datos Expuestos",
+    "description": "Descripción"
+  },
+  "recommendations": {
+    "title": "Recomendaciones de Seguridad",
+    "implement": "Implementar"
+  },
+  "cards": {
+    "password": {
+      "title": "Seguridad de Contraseña",
+      "strong": "Fuerte",
+      "medium": "Media",
+      "weak": "Débil",
+      "strengthLabel": "Fortaleza",
+      "lastChangedLabel": "Último Cambio",
+      "reusedLabel": "Reutilizada",
+      "yes": "Sí",
+      "no": "No",
+      "exposedLabel": "Expuesta",
+      "tips": "Consejos de Contraseña"
+    },
+    "wifi": {
+      "title": "Seguridad WiFi",
+      "secure": "Segura",
+      "vulnerable": "Vulnerable",
+      "encryptionLabel": "Cifrado",
+      "visibilityLabel": "Visibilidad",
+      "public": "Pública",
+      "hidden": "Oculta",
+      "lastChangedLabel": "Contraseña Última Vez Cambiada",
+      "tips": "Consejos WiFi"
+    },
+    "device": {
+      "title": "Seguridad del Dispositivo",
+      "osLabel": "Sistema Operativo",
+      "updatedLabel": "Última Actualización",
+      "encryptionLabel": "Cifrado",
+      "enabled": "Activado",
+      "disabled": "Desactivado",
+      "antivirusLabel": "Antivirus",
+      "firewallLabel": "Cortafuegos",
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "tips": "Consejos de Dispositivo"
+    },
+    "recommendations": {
+      "high": "Alta Prioridad",
+      "medium": "Prioridad Media",
+      "low": "Baja Prioridad",
+      "fixed": "Solucionado",
+      "implement": "Implementar",
+      "implemented": "Implementado"
+    }
+  },
+  "footer": {
+    "description": "Análisis de seguridad completo para ayudar a proteger tu vida digital. Valoramos tu privacidad y todos los análisis se realizan localmente.",
+    "features": "Características",
+    "emailScan": "Análisis de Correo",
+    "passwordCheck": "Verificación de Contraseña",
+    "deviceSecurity": "Seguridad del Dispositivo",
+    "resources": "Recursos",
+    "securityGuide": "Guía de Seguridad",
+    "privacyTips": "Consejos de Privacidad",
+    "faq": "Preguntas Frecuentes",
+    "legal": "Legal",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "contact": "Contacto",
+    "copyright": "© 2025 SecureMe es una marca comercial de DigitalForge. Todos los derechos reservados."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "retry": "Reintentar"
+  },
+  "languages": {
+    "en": "Inglés",
+    "es": "Español",
+    "fr": "Francés",
+    "de": "Alemán",
+    "ja": "Japonés",
+    "it": "Italiano"
+  }
+}

@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Optional: custom animation utilities for fade-in/fade-in-down */
+@layer utilities {
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-24px);}
+    100% { opacity: 1; transform: translateY(0);}
+  }
+  .animate-fade-in-down {
+    animation: fadeInDown 0.8s cubic-bezier(0.4,0,0.2,1) both;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.5s cubic-bezier(0.4,0,0.2,1) both;
+  }
 }

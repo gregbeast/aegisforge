@@ -1,0 +1,50 @@
+.
+├── README.md
+├── folder-structure.txt
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── server
+│   ├── hibpProxy-server.js
+│   ├── hibpProxy-serverfake.js
+│   ├── hibpProxy.js
+│   └── index.js
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── App.test.js
+│   ├── api
+│   │   ├── scanApi-noserver.js
+│   │   ├── scanApi-server.js
+│   │   └── scanApi.js
+│   ├── components
+│   │   ├── BreachList-noserver.jsx
+│   │   ├── BreachList-server.jsx
+│   │   ├── BreachList.jsx
+│   │   ├── DeviceCard.jsx
+│   │   ├── PasswordCard.jsx
+│   │   ├── RecommendationsCard.jsx
+│   │   ├── ScoreGauge.jsx
+│   │   ├── SkeletonResults.jsx
+│   │   ├── Tabs.jsx
+│   │   └── WifiCard.jsx
+│   ├── index-bak.css
+│   ├── index-bak.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── pages
+│   │   └── ScanPage.jsx
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── tailwind.config.js
+└── vite.config.js
+
+7 directories, 41 files

@@ -1,0 +1,165 @@
+{
+  "app": {
+    "title": "SecureMe",
+    "subtitle": "デジタルIDのセキュリティチェック"
+  },
+  "navigation": {
+    "scanner": "スキャナー",
+    "concept": "コンセプト",
+    "privacyTips": "プライバシーのヒント",
+    "about": "会社概要",
+    "closeMenu": "メニューを閉じる"
+  },
+  "landing": {
+    "headline": "あなたのメールアドレスは漏洩していませんか？",
+    "subheadline": "ワンクリックで確認できます。無料です。",
+    "emailPlaceholder": "あなたの@メール.com",
+    "verifyButton": "メールを確認する",
+    "ctaButton": "今すぐメールをチェック",
+    "checking": "確認中...",
+    "error": "リクエストを処理できませんでした。もう一度お試しください。",
+    "description": "SecureMeはウェブと漏洩したデータベースをスキャンして、あなたのデータが露出しているかどうかを検出します。警告を受け取り、対策を講じましょう。",
+    "free": "完全無料です",
+    "benefits": {
+      "instant": "メールアドレスの即時分析",
+      "alerts": "漏洩が検出された場合の即時アラート",
+      "recommendations": "パーソナライズされた推奨事項（パスワード変更、2FA設定など）",
+      "interface": "技術に詳しくないユーザーでも分かりやすく安心できるインターフェース"
+    },
+    "testimonials": {
+      "first": {
+        "text": "メインのパスワードが3年間漏洩していたことがわかりました。SecureMeに感謝します！",
+        "author": "ローラ、ジュネーブ"
+      },
+      "second": {
+        "text": "シンプル、迅速、効果的。家族全員に勧めました。",
+        "author": "ケビン、パリ"
+      }
+    }
+  },
+  "scanPage": {
+    "title": "デジタルセキュリティを確認する",
+    "description": "メールをスキャンしてデータ漏洩を発見し、パスワードセキュリティを評価し、パーソナライズされた推奨事項を取得します。",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "あなたの@メール.com",
+    "emailHint": "あなたのメールがデータ漏洩に関与していないか確認します",
+    "scanButton": "今すぐスキャン",
+    "scanning": "スキャン中...",
+    "scanError": "スキャンを完了できませんでした。後ほど再試行してください。",
+    "loadingTitle": "セキュリティプロファイルをスキャン中",
+    "loadingDescription": "数秒かかる場合があります...",
+    "resultsTitle": "セキュリティ結果", 
+    "newScanButton": "新しいスキャンを開始",
+    "tabs": {
+      "overview": "概要",
+      "breaches": "漏洩",
+      "details": "詳細"
+    }
+  },
+  "scan": {
+    "title": "セキュリティスキャン",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "メールアドレスを入力してください",
+    "scanButton": "今すぐスキャン",
+    "scanningMessage": "デジタルフットプリントをスキャン中...",
+    "resultsTitle": "あなたのセキュリティスコア",
+    "noBreaches": "漏洩は見つかりませんでした！",
+    "breachesFound": "{{count}}件の漏洩が見つかりました",
+    "breachesFound_plural": "{{count}}件の漏洩が見つかりました"
+  },
+  "results": {
+    "score": "あなたのスコア",
+    "recommendations": "推奨事項",
+    "breaches": "漏洩",
+    "devices": "デバイス",
+    "passwords": "パスワード",
+    "wifi": "WiFi"
+  },
+  "breaches": {
+    "title": "漏洩の詳細",
+    "domain": "ドメイン",
+    "breachDate": "漏洩日",
+    "dataClasses": "露出したデータ",
+    "description": "説明"
+  },
+  "recommendations": {
+    "title": "セキュリティの推奨事項",
+    "implement": "実装する"
+  },
+  "cards": {
+    "password": {
+      "title": "パスワードセキュリティ",
+      "strong": "強力",
+      "medium": "中程度",
+      "weak": "弱い",
+      "strengthLabel": "強度",
+      "lastChangedLabel": "最終変更",
+      "reusedLabel": "再利用",
+      "yes": "はい",
+      "no": "いいえ",
+      "exposedLabel": "露出",
+      "tips": "パスワードのヒント"
+    },
+    "wifi": {
+      "title": "WiFiセキュリティ",
+      "secure": "安全",
+      "vulnerable": "脆弱",
+      "encryptionLabel": "暗号化",
+      "visibilityLabel": "可視性",
+      "public": "公開",
+      "hidden": "非表示",
+      "lastChangedLabel": "パスワード最終変更",
+      "tips": "WiFiのヒント"
+    },
+    "device": {
+      "title": "デバイスセキュリティ",
+      "osLabel": "オペレーティングシステム",
+      "updatedLabel": "最終更新",
+      "encryptionLabel": "暗号化",
+      "enabled": "有効",
+      "disabled": "無効",
+      "antivirusLabel": "アンチウイルス",
+      "firewallLabel": "ファイアウォール",
+      "active": "アクティブ",
+      "inactive": "非アクティブ",
+      "tips": "デバイスのヒント"
+    },
+    "recommendations": {
+      "high": "高優先度",
+      "medium": "中優先度",
+      "low": "低優先度",
+      "fixed": "修正済み",
+      "implement": "実装する",
+      "implemented": "実装済み"
+    }
+  },
+  "footer": {
+    "description": "デジタルライフを保護するための包括的なセキュリティスキャン。私たちはあなたのプライバシーを大切にし、すべてのスキャンはローカルで実行されます。",
+    "features": "機能",
+    "emailScan": "メールスキャン",
+    "passwordCheck": "パスワードチェック",
+    "deviceSecurity": "デバイスセキュリティ",
+    "resources": "リソース",
+    "securityGuide": "セキュリティガイド",
+    "privacyTips": "プライバシーのヒント",
+    "faq": "よくある質問",
+    "legal": "法的情報",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "contact": "お問い合わせ",
+    "copyright": "© 2025 SecureMeはDigitalForgeの商標です。全著作権所有。"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "retry": "再試行"
+  },
+  "languages": {
+    "en": "英語",
+    "es": "スペイン語",
+    "fr": "フランス語",
+    "de": "ドイツ語",
+    "ja": "日本語",
+    "it": "イタリア語"
+  }
+}

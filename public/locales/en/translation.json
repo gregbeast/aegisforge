@@ -1,0 +1,437 @@
+{
+  "app": {
+    "title": "Aegis Forge",
+    "subtitle": "Security Check for Your Digital Identity"
+  },
+  "navigation": {
+    "scanner": "Scanner",
+    "concept": "Concept",
+    "privacyTips": "Privacy Tips",
+    "security-tools": "Security Tools",
+    "about": "About",
+    "pricing": "Plans",
+    "closeMenu": "Close Menu"
+  },
+  "landing": {
+    "headline": "Has your email address been compromised?",
+    "subheadline": "Find out in one click. It's free.",
+    "emailPlaceholder": "your@email.com",
+    "verifyButton": "Verify your email",
+    "ctaButton": "Check your email now",
+    "checking": "Checking...",
+    "error": "We couldn't process your request. Please try again.",
+    "description": "AegisForge scans the web and compromised databases to detect if your data has been exposed. Get alerted. Take action.",
+    "free": "It's 100% free",
+    "benefits": {
+      "instant": "Instant analysis of your email address",
+      "alerts": "Immediate alerts when a breach is detected",
+      "recommendations": "Personalized recommendations (password changes, 2FA setup, etc.)",
+      "interface": "Clear and reassuring interface, even for non-technical users"
+    },
+    "testimonials": {
+      "first": {
+        "text": "I discovered my main password had been exposed for 3 years. Thank you AegisForge!",
+        "author": "Laura, Geneva"
+      },
+      "second": {
+        "text": "Simple, fast, effective. I've recommended it to my entire family.",
+        "author": "Kevin, Paris"
+      }
+    }
+  },
+  "conceptPage": {
+    "title": "The AegisForge Concept",
+    "subtitle": "Comprehensive digital security accessible to everyone, powered by advanced threat intelligence.",
+    "mission": {
+      "title": "Our Mission",
+      "paragraph1": "In today's interconnected world, <bold>digital security is no longer optional—it's essential</bold>. Yet most security tools remain complex, intimidating, and inaccessible to the average user. AegisForge was built on a simple principle: everyone deserves robust digital protection, regardless of their technical expertise.",
+      "paragraph2": "Our platform continuously monitors the digital landscape for threats to your identity, accounts, and devices. We translate complex security concepts into clear, actionable recommendations, empowering you to protect your digital life without needing a cybersecurity degree."
+    },
+    "features": {
+      "breachDetection": {
+        "title": "Breach Detection",
+        "description": "<bold>Our system</bold> monitors hundreds of data breach sources and <bold>alerts you instantly if your information is exposed</bold>. We check email addresses, usernames, and other identifiers against a comprehensive database of known breaches."
+      },
+      "passwordSecurity": {
+        "title": "Password Security",
+        "description": "We evaluate password strength and check for compromised credentials across multiple services. Our recommendations help you implement proper password hygiene without the frustration."
+      },
+      "deviceSecurity": {
+        "title": "Device Security",
+        "description": "We analyze your device configuration for security vulnerabilities, outdated software, and potentially risky settings. Get personalized advice to strengthen your device's security posture."
+      },
+      "networkProtection": {
+        "title": "Network Protection",
+        "description": "We evaluate your network security, including WiFi encryption standards and potential vulnerabilities. Our system provides guidance for securing your connections against common attack vectors."
+      }
+    },
+    "methodology": {
+      "title": "Our Security Methodology",
+      "step1": {
+        "title": "Comprehensive Scanning",
+        "description": "Our multi-layered scanning technology examines your digital footprint across various data sources, identifying potential security issues before they can be exploited."
+      },
+      "step2": {
+        "title": "Risk Assessment",
+        "description": "We calculate a security score based on multiple factors, giving you a clear picture of your overall security posture and highlighting areas that need attention."
+      },
+      "step3": {
+        "title": "Actionable Recommendations",
+        "description": "Instead of overwhelming you with technical jargon, we provide clear, prioritized steps to address vulnerabilities and strengthen your security."
+      },
+      "step4": {
+        "title": "Continuous Monitoring",
+        "description": "Digital threats evolve constantly. Our service continuously monitors your security status, alerting you to new vulnerabilities as they emerge."
+      }
+    },
+    "privacy": {
+      "title": "Our Privacy Commitment",
+      "intro": "At AegisForge, we believe security and privacy go hand in hand. That's why we've designed our platform with privacy at its core:",
+      "points": {
+        "local": "All security scans are performed locally on your device whenever possible",
+        "noSelling": "We minimize data collection and never sell your information to third parties",
+        "encryption": "Our systems use encryption and secure protocols to protect any data in transit",
+        "control": "You maintain control over what is scanned and when"
+      },
+      "conclusion": "We're committed to transparency in our operations and will always be upfront about how we process your data. Your trust is our most valuable asset."
+    },
+    "cta": {
+      "title": "Ready to secure your digital life?",
+      "description": "Start with a free security scan and see how AegisForge can help protect your digital presence.",
+      "button": "Start Your Security Scan"
+    }
+  },
+  "scanPage": {
+    "title": "Check Your Digital Security",
+    "description": "Scan your email to discover data breaches, assess your password security, and get personalized recommendations.",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "emailHint": "We'll check if your email has been involved in any data breaches",
+    "scanButton": "Scan Now",
+    "scanning": "Scanning...",
+    "scanError": "We couldn't complete the scan. Please try again later.",
+    "loadingTitle": "Scanning Your Security Profile",
+    "loadingDescription": "This may take a few seconds...",
+    "resultsTitle": "Your Security Results", 
+    "newScanButton": "Start a New Scan",
+    "tabs": {
+      "overview": "Overview",
+      "breaches": "Breaches",
+      "details": "Details"
+    }
+  },
+  "scan": {
+    "title": "Security Scan",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "scanButton": "Scan Now",
+    "scanningMessage": "Scanning your digital footprint...",
+    "resultsTitle": "Your Security Score",
+    "noBreaches": "No breaches found!",
+    "breachesFound": "Found {{count}} breach",
+    "breachesFound_plural": "Found {{count}} breaches"
+  },
+  "deviceCard": {
+    "title": "Device Security",
+    "unknownOs": "Unknown",
+    "operatingSystem": "Operating System",
+    "rootStatus": "Root Status",
+    "rootedJailbroken": "Rooted/Jailbroken",
+    "secure": "Secure",
+    "securityPatches": "Security Patches",
+    "upToDate": "Up to date",
+    "updatesNeeded": "Updates needed",
+    "latestPatches": "Latest Patches",
+    "appPermissions": "App Permissions",
+    "highNumberOfPermissions": "High number of permissions",
+    "securityWarning": "Security Warning",
+    "rootWarningMessage": "Rooted/jailbroken devices have reduced security protections. This may expose your device to additional security risks.",
+    "permissions": {
+      "Camera": "Camera",
+      "Microphone": "Microphone",
+      "Location": "Location",
+      "Contacts": "Contacts",
+      "Calendar": "Calendar",
+      "Photos": "Photos",
+      "Storage": "Storage",
+      "Bluetooth": "Bluetooth",
+      "Notifications": "Notifications",
+      "Background App Refresh": "Background App Refresh"
+    }
+  },
+  "breachList": {
+    "unknown": "Unknown",
+    "unknownDate": "Unknown date",
+    "breachAriaLabel": "Breach at {{name}} on {{date}}",
+    "recordsCount": "{{count}} records",
+    "noBreachesFound": "🎉 No breaches found — your email is safe on public breach lists!",
+    "emailFoundIn": "Your Email Found In:",
+    "dataTypes": {
+      "Email addresses": "Email addresses",
+      "Usernames": "Usernames",
+      "Passwords": "Passwords",
+      "Dates of birth": "Dates of birth",
+      "IP addresses": "IP addresses",
+      "Phone numbers": "Phone numbers",
+      "Physical addresses": "Physical addresses",
+      "Credit card data": "Credit card data",
+      "Social media profiles": "Social media profiles"
+    }
+  },
+  "passwordCard": {
+    "title": "Password Security",
+    "foundInOneBreachMessage": "Found in 1 known data breach",
+    "foundInMultipleBreachesMessage": "Found in {{count}} known data breaches",
+    "notFoundMessage": "Not found in any known data breaches",
+    "recommendedActionsTitle": "Recommended Actions",
+    "keepUpGoodWorkTitle": "Keep Up the Good Work",
+    "actions": {
+      "changePassword": "Change your password immediately",
+      "useUniquePassword": "Use a unique password for each account",
+      "enable2FA": "Enable two-factor authentication where available",
+      "usePasswordManager": "Consider using a password manager"
+    },
+    "goodPractices": {
+      "continueUniquePasswords": "Continue using unique passwords for each account",
+      "regularlyUpdate": "Regularly update your passwords every 3-6 months",
+      "usePasswordManager": "Use a password manager for added security"
+    }
+  },
+  "wifiCard": {
+    "title": "WiFi Security",
+    "encryption": "encryption",
+    "publicNetwork": " (Public network)",
+    "privateNetwork": " (Private network)",
+    "securityConcerns": "Security Concerns",
+    "recommendations": {
+      "title": "Recommendations",
+      "upgradeToWpa2": "Upgrade to WPA2 or WPA3 if your router supports it",
+      "useStrongPassword": "Use strong, unique passwords for your WiFi network"
+    },
+    "concerns": {
+      "publicWifiVulnerable": "Public WiFi networks are vulnerable to eavesdropping",
+      "unencryptedWifi": "Unencrypted WiFi provides no protection",
+      "wepCompromised": "WEP encryption can be easily compromised",
+      "useVpn": "Consider using a VPN for added security"
+    }
+  },
+  "recommendations": {
+    "title": "Recommended Actions",
+    "items": {
+      "change_your_password_immediately": "Change your password immediately",
+      "enable_2fa_on_all_accounts": "Enable 2FA on all accounts",
+      "review_recent_account_activity": "Review recent account activity",
+      "use_a_password_manager": "Use a password manager",
+      "check_for_software_updates": "Check for software updates",
+      "avoid_using_public_wifi": "Avoid using public WiFi",
+      "install_a_security_app": "Install a security app",
+      "consider_updating_your_password": "Consider updating your password",
+      "enable_2fa_where_available": "Enable 2FA where available",
+      "check_privacy_settings_on_your_accounts": "Check privacy settings on your accounts",
+      "keep_your_software_updated": "Keep your software updated",
+      "be_cautious_with_public_wifi": "Be cautious with public WiFi",
+      "great_job_continue_monitoring_your_accounts": "Great job! Continue monitoring your accounts",
+      "regularly_check_for_new_security_features": "Regularly check for new security features",
+      "consider_a_security_audit_every_few_months": "Consider a security audit every few months",
+      "keep_your_current_security_practices": "Keep your current security practices"
+    },
+    "priority": {
+      "high": "High Priority",
+      "medium": "Medium Priority",
+      "low": "Low Priority",
+      "fixed": "Fixed"
+    },
+    "actions": {
+      "implement": "Implement",
+      "implemented": "Implemented"
+    }
+  },
+  "results": {
+    "score": "Your Score",
+    "recommendations": "Recommendations",
+    "breaches": "Breaches",
+    "devices": "Devices",
+    "passwords": "Passwords",
+    "wifi": "WiFi"
+  },
+  "breaches": {
+    "title": "Breach Details",
+    "domain": "Domain",
+    "breachDate": "Breach Date",
+    "dataClasses": "Exposed Data",
+    "description": "Description"
+  },
+  "cards": {
+    "password": {
+      "title": "Password Security",
+      "strong": "Strong",
+      "medium": "Medium",
+      "weak": "Weak",
+      "strengthLabel": "Strength",
+      "lastChangedLabel": "Last Changed",
+      "reusedLabel": "Reused",
+      "yes": "Yes",
+      "no": "No",
+      "exposedLabel": "Exposed",
+      "tips": "Password Tips"
+    },
+    "wifi": {
+      "title": "WiFi Security",
+      "secure": "Secure",
+      "vulnerable": "Vulnerable",
+      "encryptionLabel": "Encryption",
+      "visibilityLabel": "Visibility",
+      "public": "Public",
+      "hidden": "Hidden",
+      "lastChangedLabel": "Password Last Changed",
+      "tips": "WiFi Tips"
+    },
+    "device": {
+      "title": "Device Security",
+      "osLabel": "Operating System",
+      "updatedLabel": "Last Updated",
+      "encryptionLabel": "Encryption",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "antivirusLabel": "Antivirus",
+      "firewallLabel": "Firewall",
+      "active": "Active",
+      "inactive": "Inactive",
+      "tips": "Device Tips"
+    }
+  },
+  "aboutPage": {
+    "title": "About AegisForge",
+    "subtitle": "Our mission is to empower everyone with the tools and knowledge to protect their digital lives.",
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "AegisForge was founded with a clear mission: to democratize cybersecurity. We believe that robust digital protection shouldn't be a privilege reserved for large organizations with dedicated security teams—it should be accessible to everyone.",
+      "paragraph2": "Today, our team of security experts, developers, and user experience specialists work together to provide a comprehensive security solution that empowers rather than overwhelms. We're proud to have helped thousands of users strengthen their digital security and protect what matters most to them."
+    },
+    "values": {
+      "protection": {
+        "title": "Protection for All",
+        "description": "We believe strong digital security should be accessible to everyone, regardless of technical expertise or resources. We design our tools to be powerful yet intuitive."
+      },
+      "excellence": {
+        "title": "Excellence & Integrity",
+        "description": "We hold ourselves to the highest standards in all we do. We're committed to ethical practices, transparency in our methods, and continuous improvement of our services."
+      },
+      "userCentered": {
+        "title": "User-Centered Approach",
+        "description": "We design with our users at the center of everything we do. We transform complex security concepts into clear, actionable guidance that empowers rather than overwhelms."
+      }
+    },
+    "impact": {
+      "title": "Our Impact",
+      "users": {
+        "count": "50,000+",
+        "label": "Users Protected"
+      },
+      "vulnerabilities": {
+        "count": "1 Million",
+        "label": "Vulnerabilities Identified"
+      },
+      "satisfaction": {
+        "count": "98%",
+        "label": "User Satisfaction"
+      }
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "members": {
+        "greg": {
+          "name": "Greg Roy",
+          "role": "Founder & Architect",
+          "bio": "Former cybersecurity consultant and full-stack developer with 10+ years of experience protecting enterprise systems. Greg founded AegisForge to make professional-grade security accessible to everyone."
+        },
+        "marissa": {
+          "name": "Marissa Duret",
+          "role": "Producer",
+          "bio": "Producer with expertise in gaming development and cutting edge technology. Marissa leads our UX and engineering team and ensures our platform maintains the highest standards."
+        },
+        "marcus": {
+          "name": "Marcus Williams",
+          "role": "Threat Intelligence Analyst",
+          "bio": "Former intelligence officer specialized in digital threats. Marcus monitors emerging security threats and ensures our detection systems remain up-to-date."
+        },
+        "emma": {
+          "name": "Emma Rodriguez",
+          "role": "User Experience Director",
+          "bio": "Human-computer interaction specialist with a background in cognitive psychology. Emma ensures our security tools are accessible and intuitive for users of all technical levels."
+        }
+      }
+    },
+    "global": {
+      "title": "Our Global Presence",
+      "description": "AegisForge serves users across 15+ countries, with team members distributed around the world. Our diverse perspectives enable us to address security challenges from multiple angles and provide culturally relevant solutions.",
+      "mapAlt": "World map showing AegisForge presence"
+    },
+    "testimonials": {
+      "title": "What Users Say About Us",
+      "first": {
+        "text": "\"AegisForge completely changed how I think about my online security. The dashboard is intuitive, and the recommendations are clear and actionable. I feel much more confident now.\"",
+        "author": "— Michael T., Small Business Owner"
+      },
+      "second": {
+        "text": "\"As someone who isn't tech-savvy, I always felt intimidated by cybersecurity. AegisForge explains everything clearly and walks me through each step. I've recommended it to all my friends and family.\"",
+        "author": "— Jennifer L., Educator"
+      }
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "info": {
+        "title": "Contact Information",
+        "email": {
+          "title": "Email Us",
+          "address": "support@aegisforge.com"
+        },
+        "chat": {
+          "title": "Live Chat",
+          "availability": "Available 24/7 through our app"
+        }
+      },
+      "form": {
+        "title": "Send Us a Message",
+        "name": "Your Name",
+        "email": "Email Address",
+        "message": "Message",
+        "submit": "Send Message"
+      }
+    },
+    "careers": {
+      "title": "Join Our Team",
+      "description": "We're always looking for talented individuals who are passionate about cybersecurity and making the digital world safer for everyone.",
+      "button": "View Open Positions"
+    }
+  },
+  "footer": {
+    "description": "Comprehensive security scanning to help protect your digital life. We value your privacy and all scans are performed locally.",
+    "features": "Features",
+    "emailScan": "Email Scan",
+    "passwordCheck": "Password Check",
+    "deviceSecurity": "Device Security",
+    "resources": "Resources",
+    "securityGuide": "Security Guide",
+    "privacyTips": "Privacy Tips",
+    "faq": "FAQ",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "contact": "Contact",
+    "copyright": "© 2025 AegisForge is a DigitalForge's trademark. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French",
+    "de": "German",
+    "ja": "Japanese",
+    "it": "Italian"
+  }
+}
