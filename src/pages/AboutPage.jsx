@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Users, Award, Globe, Shield, MessageCircle, Mail, Check, AlertCircle, Loader } from 'lucide-react';
+import { Users, Award, Globe, Shield, MessageCircle, Mail, Check, AlertCircle, Loader, ThumbsUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 
@@ -77,22 +77,6 @@ const AboutPage = ({ darkMode = false }) => {
         message: response.data.message || 'Your message has been sent successfully!'
       });
       
-      // Reset form after successful submission
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setFormStatus(prev => ({
-          ...prev,
-          isSubmitted: false,
-          message: ''
-        }));
-      }, 5000);
-      
     } catch (error) {
       // Handle error
       setFormStatus({
@@ -103,6 +87,40 @@ const AboutPage = ({ darkMode = false }) => {
       });
     }
   };
+
+  // Render success state component
+  const renderSuccessState = () => (
+    <div className="bg-green-50 border border-green-100 rounded-xl p-8 text-center">
+      <div className="flex justify-center mb-4">
+        <div className="bg-green-100 p-3 rounded-full">
+          <ThumbsUp className="h-8 w-8 text-green-600" />
+        </div>
+      </div>
+      
+      <h3 className="text-xl font-bold text-green-800 mb-2">Message Sent Successfully!</h3>
+      <p className="text-green-700 mb-6">
+        Thank you for reaching out. We've received your message and will respond shortly.
+      </p>
+      
+      <div className="bg-white p-4 rounded-lg shadow-sm border border-green-100 mb-6 max-w-md mx-auto">
+        <div className="text-left mb-3">
+          <p className="text-sm text-gray-500 mb-1">From</p>
+          <p className="font-medium">{formData.name} ({formData.email})</p>
+        </div>
+        <div className="text-left">
+          <p className="text-sm text-gray-500 mb-1">Message</p>
+          <p className="text-gray-700">{formData.message}</p>
+        </div>
+      </div>
+      
+      <button 
+        onClick={() => setFormStatus({isSubmitting: false, isSubmitted: false, isError: false, message: ''})}
+        className="px-6 py-2 bg-green-600 text-white font-medium rounded-lg shadow-sm hover:bg-green-700 transition-colors"
+      >
+        Send Another Message
+      </button>
+    </div>
+  );
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -281,7 +299,7 @@ const AboutPage = ({ darkMode = false }) => {
                 <Mail className="text-blue-600 mr-3 mt-1 flex-shrink-0" size={20} />
                 <div>
                   <p className="font-medium text-slate-800">{t('aboutPage.contact.info.email.title')}</p>
-                  <a href="mailto:contact@aegisforge.com" className="text-blue-600 hover:underline">
+                  <a href="mailto:support@aegisforge.com" className="text-blue-600 hover:underline">
                     {t('aboutPage.contact.info.email.address')}
                   </a>
                 </div>
@@ -296,85 +314,86 @@ const AboutPage = ({ darkMode = false }) => {
             </div>
           </div>
           <div>
-            <h3 className="font-semibold text-slate-800 mb-4">{t('aboutPage.contact.form.title')}</h3>
-            
-            {/* Form status messages */}
-            {formStatus.isSubmitted && (
-              <div className="mb-4 p-3 bg-green-50 border border-green-100 rounded-lg flex items-center text-green-700">
-                <Check className="h-5 w-5 mr-2 flex-shrink-0" />
-                <span>{formStatus.message}</span>
-              </div>
-            )}
-            
-            {formStatus.isError && (
-              <div className="mb-4 p-3 bg-red-50 border border-red-100 rounded-lg flex items-center text-red-700">
-                <AlertCircle className="h-5 w-5 mr-2 flex-shrink-0" />
-                <span>{formStatus.message}</span>
-              </div>
-            )}
-            
-            {/* Contact form */}
-            <form className="space-y-4" onSubmit={handleSubmit}>
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
-                  {t('aboutPage.contact.form.name')}
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
-                  required
-                  disabled={formStatus.isSubmitting}
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
-                  {t('aboutPage.contact.form.email')}
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
-                  required
-                  disabled={formStatus.isSubmitting}
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
-                  {t('aboutPage.contact.form.message')}
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  rows={4}
-                  className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
-                  required
-                  disabled={formStatus.isSubmitting}
-                ></textarea>
-              </div>
-              <button 
-                type="submit" 
-                className="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-sm hover:bg-blue-700 transition-colors flex items-center justify-center"
-                disabled={formStatus.isSubmitting}
-              >
-                {formStatus.isSubmitting ? (
-                  <>
-                    <Loader className="animate-spin mr-2 h-4 w-4" />
-                    {t('common.loading')}
-                  </>
-                ) : (
-                  t('aboutPage.contact.form.submit')
+            {formStatus.isSubmitted ? (
+              // Show success confirmation
+              renderSuccessState()
+            ) : (
+              // Show contact form
+              <>
+                <h3 className="font-semibold text-slate-800 mb-4">{t('aboutPage.contact.form.title')}</h3>
+                
+                {/* Form error message */}
+                {formStatus.isError && (
+                  <div className="mb-4 p-3 bg-red-50 border border-red-100 rounded-lg flex items-center text-red-700">
+                    <AlertCircle className="h-5 w-5 mr-2 flex-shrink-0" />
+                    <span>{formStatus.message}</span>
+                  </div>
                 )}
-              </button>
-            </form>
+                
+                {/* Contact form */}
+                <form className="space-y-4" onSubmit={handleSubmit}>
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
+                      {t('aboutPage.contact.form.name')}
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                      required
+                      disabled={formStatus.isSubmitting}
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
+                      {t('aboutPage.contact.form.email')}
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                      required
+                      disabled={formStatus.isSubmitting}
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
+                      {t('aboutPage.contact.form.message')}
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      rows={4}
+                      className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                      required
+                      disabled={formStatus.isSubmitting}
+                    ></textarea>
+                  </div>
+                  <button 
+                    type="submit" 
+                    className="w-full px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-sm hover:bg-blue-700 transition-colors flex items-center justify-center"
+                    disabled={formStatus.isSubmitting}
+                  >
+                    {formStatus.isSubmitting ? (
+                      <>
+                        <Loader className="animate-spin mr-2 h-4 w-4" />
+                        {t('common.loading')}
+                      </>
+                    ) : (
+                      t('aboutPage.contact.form.submit')
+                    )}
+                  </button>
+                </form>
+              </>
+            )}
           </div>
         </div>
       </div>
