@@ -8,8 +8,10 @@ const PricingPage = () => {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const pricingRef = useRef(null);
 
-// Video URL - replace with your actual demo video URL
-const demoVideoUrl = "https://www.youtube.com/watch?v=etXFdqPu1Wk"; // Placeholder URL
+// Video URLs for different orientations
+const landscapeVideoUrl = "/videos/background.mp4"; // 16:9 format 
+const portraitVideoUrl = "/videos/aegis-forge-demo.mp4"; // 9:16 format
+
 
 // Scroll to pricing section when "View Plans" button is clicked
 const scrollToPricing = (e) => {
@@ -171,7 +173,8 @@ const openVideoModal = (e) => {
     <VideoModal 
       isOpen={isVideoModalOpen} 
       onClose={() => setIsVideoModalOpen(false)} 
-      videoUrl={demoVideoUrl} 
+      landscapeVideoUrl={landscapeVideoUrl}
+      portraitVideoUrl={portraitVideoUrl}
     />
       {/* Enhanced Hero Section with Animation and Shield */}
       <div className="relative overflow-hidden bg-gradient-to-r from-slate-800 to-slate-900 py-16 sm:py-24">
